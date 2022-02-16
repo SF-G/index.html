@@ -211,6 +211,7 @@ footer{
     }
     .socialBox{
         height: 300px;
+        overflow: scroll;
     }
 } 
 
