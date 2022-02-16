@@ -87,6 +87,9 @@ footer{
     text-align: center;
     text-shadow: 0 0 10px rgb(255, 255, 255);
 }
+.socImg{
+    width: 25%;
+}
 @font-face {
     font-family: MuseoSansDisplay;
     src: url(Files/MuseoSansDisplay-ExtraLight.ttf);
@@ -176,6 +179,12 @@ footer{
 /* ADAPTATION */
 /* ADAPTATION */
 
+@media screen and (max-width: 1800px) {
+    .gmailBox, .telBox{
+        overflow: scroll;
+    }
+}
+
 
 @media screen and (max-width: 1288px) {
     .header{
@@ -186,6 +195,22 @@ footer{
     }
     .title{
         text-align: center;
+    }
+
+    .gmailBox, .telBox{
+        overflow: scroll;
+    }
+    footer{
+        overflow: scroll;
+    }
+    .socImg{
+        width: 20%;
+    }
+    .socImg{
+        display: none;
+    }
+    .socialBox{
+        height: 300px;
     }
 } 
 
@@ -201,21 +226,33 @@ footer{
     .logo{
         margin-top: -50px;
     }
+    .socialBox{
+        height: 230px;
+    }
 }
 
 @media screen and (max-width: 736px) {
     .header{
         width: 200%;
     }
+    .socialBox{
+        height: 170px;
+    }
 }
 @media screen and (max-width: 625px) {
     .header{
         width: 250%;
+    }
+    .socialBox{
+        height: 150px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .header{
         width: 300%;
+    }
+    .socialBox{
+        height: 130px;
     }
 }
